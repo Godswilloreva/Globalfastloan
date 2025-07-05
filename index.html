@@ -23,7 +23,104 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav><br>
+
+
+
+<!-- Recent Loan Marquee - Fading In/Out -->
+<div id="loan-notify" style="width:100%; max-width:500px; margin:auto; background:#0a1d4e; color:#fff; padding:15px; border-radius:10px; text-align:center; font-weight:bold; font-family:sans-serif; font-size:16px; box-shadow:0 0 10px rgba(0,0,0,0.2);">
+  <span id="loan-text">Loading recent loan approvals...</span>
+</div>
+
+<script>
+  const loanData = [
+    "James Walker just received $50,000",
+    "Emily Johnson approved for $20,000",
+    "Lucas Martin got $75,000",
+    "Sophia Davis received $30,000",
+    "Ethan Clark got $45,000",
+    "Olivia Moore just got $60,000",
+    "Mason Harris collected $25,000",
+    "Isabella Wilson received $40,000",
+    "Elijah Young approved for $55,000",
+    "Ava White received $100,000",
+    "Benjamin Lewis got $90,000",
+    "Mia Scott collected $70,000",
+    "Noah Green received $20,000",
+    "Lily Adams got $50,000",
+    "Jackson Carter received $65,000",
+    "Zoe Baker just got $35,000",
+    "Logan Mitchell approved for $30,000",
+    "Chloe Brooks received $85,000",
+    "Aiden Rivera just received $25,000",
+    "Grace Kelly got $45,000",
+    "Jayden Reed received $95,000",
+    "Scarlett Stewart got $70,000",
+    "Daniel Cook just received $55,000",
+    "Aria Bell approved for $100,000",
+    "Henry Morgan got $80,000",
+    "Ella Bennett collected $40,000",
+    "Carter Morris received $20,000",
+    "Harper Price got $35,000",
+    "Gabriel Simmons received $60,000",
+    "Audrey Barnes approved for $75,000",
+    "Levi Ross received $30,000",
+    "Victoria Coleman got $65,000",
+    "Isaac Murphy received $90,000",
+    "Penelope Watson got $25,000",
+    "Dylan James collected $50,000",
+    "Nora Powell just got $85,000",
+    "Nathan Long received $70,000",
+    "Brooklyn Gray got $100,000",
+    "Christian Foster approved for $60,000",
+    "Madison Sanders received $95,000",
+    "Julian Ward got $45,000",
+    "Leah Bryant received $80,000",
+    "Andrew Hayes got $35,000",
+    "Camila Perry just received $30,000",
+    "Jaxon Wood approved for $20,000",
+    "Layla Coleman got $40,000",
+    "Sebastian Patterson received $75,000",
+    "Ellie Jenkins got $50,000",
+    "Wyatt Butler approved for $55,000",
+    "Hazel Russell just got $100,000"
+  ];
+
+  let currentIndex = 0;
+  const textElement = document.getElementById("loan-text");
+
+  function showNextLoan() {
+    textElement.style.opacity = 0;
+
+    setTimeout(() => {
+      textElement.textContent = loanData[currentIndex];
+      textElement.style.opacity = 1;
+      currentIndex = (currentIndex + 1) % loanData.length;
+    }, 500);
+  }
+
+  // Start the loop
+  setInterval(showNextLoan, 3500);
+</script>
+
+<style>
+  #loan-text {
+    transition: opacity 0.5s ease-in-out;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Header -->
   <div class="container-fluid text-center py-5" style="background: linear-gradient(to right, #0a1d4e, #3458a0); color: white;">
@@ -59,12 +156,120 @@
     <h3 style="color: #0a1d4e;">Ready to Get Your Loan?</h3>
     <p>Click below to start your quick 2-step loan application.</p>
     <a href="login.html" class="btn btn-primary btn-lg">Start Application</a>
-  </div>
+  </div><br>
+
+
+
+<!-- Recent Loan Marquee - Fading In/Out -->
+<div id="loan-notify" style="width:100%; max-width:500px; margin:auto; background:#0a1d4e; color:#fff; padding:15px; border-radius:10px; text-align:center; font-weight:bold; font-family:sans-serif; font-size:16px; box-shadow:0 0 10px rgba(0,0,0,0.2);">
+  <span id="loan-text">Loading recent loan approvals...</span>
+</div>
+
+<script>
+  const loanData = [
+    "James Walker just received $50,000",
+    "Emily Johnson approved for $20,000",
+    "Lucas Martin got $75,000",
+    "Sophia Davis received $30,000",
+    "Ethan Clark got $45,000",
+    "Olivia Moore just got $60,000",
+    "Mason Harris collected $25,000",
+    "Isabella Wilson received $40,000",
+    "Elijah Young approved for $55,000",
+    "Ava White received $100,000",
+    "Benjamin Lewis got $90,000",
+    "Mia Scott collected $70,000",
+    "Noah Green received $20,000",
+    "Lily Adams got $50,000",
+    "Jackson Carter received $65,000",
+    "Zoe Baker just got $35,000",
+    "Logan Mitchell approved for $30,000",
+    "Chloe Brooks received $85,000",
+    "Aiden Rivera just received $25,000",
+    "Grace Kelly got $45,000",
+    "Jayden Reed received $95,000",
+    "Scarlett Stewart got $70,000",
+    "Daniel Cook just received $55,000",
+    "Aria Bell approved for $100,000",
+    "Henry Morgan got $80,000",
+    "Ella Bennett collected $40,000",
+    "Carter Morris received $20,000",
+    "Harper Price got $35,000",
+    "Gabriel Simmons received $60,000",
+    "Audrey Barnes approved for $75,000",
+    "Levi Ross received $30,000",
+    "Victoria Coleman got $65,000",
+    "Isaac Murphy received $90,000",
+    "Penelope Watson got $25,000",
+    "Dylan James collected $50,000",
+    "Nora Powell just got $85,000",
+    "Nathan Long received $70,000",
+    "Brooklyn Gray got $100,000",
+    "Christian Foster approved for $60,000",
+    "Madison Sanders received $95,000",
+    "Julian Ward got $45,000",
+    "Leah Bryant received $80,000",
+    "Andrew Hayes got $35,000",
+    "Camila Perry just received $30,000",
+    "Jaxon Wood approved for $20,000",
+    "Layla Coleman got $40,000",
+    "Sebastian Patterson received $75,000",
+    "Ellie Jenkins got $50,000",
+    "Wyatt Butler approved for $55,000",
+    "Hazel Russell just got $100,000"
+  ];
+
+  let currentIndex = 0;
+  const textElement = document.getElementById("loan-text");
+
+  function showNextLoan() {
+    textElement.style.opacity = 0;
+
+    setTimeout(() => {
+      textElement.textContent = loanData[currentIndex];
+      textElement.style.opacity = 1;
+      currentIndex = (currentIndex + 1) % loanData.length;
+    }, 500);
+  }
+
+  // Start the loop
+  setInterval(showNextLoan, 3500);
+</script>
+
+<style>
+  #loan-text {
+    transition: opacity 0.5s ease-in-out;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Footer -->
   <footer class="text-center text-white py-3" style="background-color: #0a1d4e;">
     <p style="margin: 0;">&copy; 2025 GlobalFastLoan. All rights reserved.</p>
-    <p style="font-size: 0.9rem;" id="contact">Contact:= support@globalfastloan.com</p>
+    <p style="font-size: 0.9rem;" id="contact">Contact:= globalfastloanofficial@gmail.com</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
